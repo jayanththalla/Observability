@@ -1,0 +1,13 @@
+from typing import TypedDict, List
+
+class AgentState(TypedDict):
+    """A dictionary representing the state of an agent."""
+    question:str
+    refined_question:str
+    doc_sections:List[str]
+    web_results: str
+    synthesis: str
+    final_report: str
+    session_id: str
+    steps_taken: List[str]
+    
